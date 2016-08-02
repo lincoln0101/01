@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+body{margin:30px;}
+form{padding: 10px;width: 200px;background-color: orange;}
+fieldset legend{color: #fff;}
+	</style>
+</head>
+<body>
+	<form >
+		<fieldset><legend>计算器</legend>
+          第一个数字：<input type="text" id="number01"><br>
+          第二个数字：<input type="text" id="number02"><br>
+          <input type="button" onclick="multiplyBy()" value="乘法">
+          <input type="button" onclick="divideBy()" value="除法">
+
+	<form>
+		<p>得出的结果是:(
+		<span id="result"></span> )</p></fieldset>
+<script type="text/javascript">
+function multiplyBy(){
+	num1 = document.getElementById("number01").value;
+	num2 = document.getElementById("number02").value;
+	document.getElementById("result").innerHTML= num1 * num2;
+}
+function divideBy(){
+	num1 = document.getElementById("number01").value;
+	num2 = document.getElementById("number02").value;
+	document.getElementById("result").innerHTML = num1 / num2;
+}
+</script>
+</body>
+</html>
